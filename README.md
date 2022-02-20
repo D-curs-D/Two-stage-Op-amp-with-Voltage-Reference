@@ -1,2 +1,2 @@
-# Two-stage-Op-amp-with-Voltage-Reference
-The design is done for the Analog IC Design Hackathon, that was made possible due to the collaboration of VSD, IIT Hyderabad and Synopsys India. The design I have chosen has two components, one a voltage reference circuit and another a general purpose two stage opamp. The design was created and analyzed using synopsys custom design suite. 
+# Two stage Operational Amplifier with Voltage Reference Circuit
+The project is focused on the creation of an Operational Amplifier with it's own Voltage reference circuit to bias it. The design is based on the 28nm iPDK from sysnposys and hence, is done on it's custom design suite.
