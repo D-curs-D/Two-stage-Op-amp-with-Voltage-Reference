@@ -23,6 +23,10 @@ The design was done on __Synopsys Custom Design Suite__ using it's 28nm technolo
 So, let's start with the most crucial part of our design, the __Aspect Ratio(S)__ of the devices used. This is done based off our requirements of the current and also the swing expected. The first steps is hence, to see how our mosfets behave, that is how the models work. To do this, we characterise them individually.
 
 #### NMOS
-The __N-Channel Metal Oxide-Semiconductor Field Effect Transistors__ or __NMOS__ for short, are a type of MOS transistors where an N type channel is created for current conduction when we apply a potential at the gate of the transistor. To characterise a MOS transistor, we need to find a couple values and also deterine a couple constants that we can use further to design rest of the circuits.
+The __N-Channel Metal Oxide-Semiconductor Field Effect Transistors__ or __NMOS__ for short, are a type of MOS transistors where an N type channel is created for current conduction when we apply a potential at the gate of the transistor. To characterise a MOS transistor, we need to find a couple values and also deterine a couple constants that we can use further to design rest of the circuits. The testbench is shown below:<br>
+![nmos char](/images/nmoschar.PNG)<br>
 
-For starters, we take a length and we stick to it for the rest of our estimations. ___I would be using L as 5 * Lmin.___
+For starters, we take a length and we stick to it for the rest of our estimations. ___I would be using L as 5 * Lmin.___. Below is the Ids vs Vgs curve for the NMOS device.<br>
+![nmos ids vs vgs](/images/nmos_idsvsvgs.PNG)<br>
+
+Using this curve we can assume the __Vth__ to be closer to __0.5 Volts__. This would be a lot useful when we scale up, that is move to actual calculations.<br><br> Next we find the Vds vs Ids, this would help us determine the current to move forward with.
