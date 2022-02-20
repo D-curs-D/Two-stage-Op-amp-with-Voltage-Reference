@@ -3,13 +3,12 @@ _The project is focused on the creation of an Operational Amplifier with it's ow
 ![main-image]()
 
 ### Table of Contents
-- [Introduction and  Abstract](Introduction)
-- [Testing the PDK](PDK-Test)
-  - [NMOS and PMOS Tests](MOSFET-Characteristics)
-    - [NMOS](NMOS)
-    - [PMOS](PMOS)
-    - [Determining Sizes](Conclusion-and-Sizing)
-  - [Inverter Design](Inverter) 
+- [Introduction and  Abstract](#Introduction)
+- [Testing the PDK](#PDK-Test)
+  - [NMOS](#NMOS)
+  - [PMOS](#PMOS)
+  - [Determining Sizes](#Conclusion-and-Sizing)
+  - [Inverter Design](#Inverter) 
 
 ### Introduction
 __Operational amplifier (Op-Amp)__ circuits are _the most important and essential building blocks in the design of different high precision analog and mixed signal blocks_, where the performance is directly dependent to how good your op-amp is. These op-amp circuits have substituted the conventional solid state analog control systems used in industrial applications. With the advent of newer and shrinking device technologies these circuits have become popular and are almost used in implementation of various analog systems, analog to digital converter circuits, digital to analog converter circuits, analog instrumentation design, analog computation and performing the tasks such as higher order active filtering of signals, amplification of signal voltages, signal transduction and ultra high speed conversion of signals. General purpose op-amp circuits are used to realize circuits such as differentiators, high speed comparator circuits, clippers, clampers, antilog and log amplifier circuits, integrators, various waveform generation, addition of analog input signals, buffering of signals, sample and hold circuits, negative impedance converters, differential amplifiers, inverting and non-inverting amplifiers regulated power supplies and many other applications.
