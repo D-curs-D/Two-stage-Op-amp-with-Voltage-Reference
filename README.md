@@ -9,10 +9,10 @@ _The project is focused on the creation of an Operational Amplifier with it's ow
   - [PMOS](#PMOS)
   - [Determining Sizes](#Conclusion-and-Sizing)
   - [Inverter Design](#Inverter)
-- [Main Design]
+- [Main Design](#Main-Design)
   - [Voltage Refernce Circuit](#Voltage-Reference-Circuit)
   - [2 Stage OpAMP](#2-Stage-OpAMP)
-  - [Final Say](#Results-and-Conclusion)
+  - [Final Say](#Conclusions)
 
 ### Introduction
 __Operational amplifier (Op-Amp)__ circuits are _the most important and essential building blocks in the design of different high precision analog and mixed signal blocks_, where the performance is directly dependent to how good your op-amp is. These op-amp circuits have substituted the conventional solid state analog control systems used in industrial applications. With the advent of newer and shrinking device technologies these circuits have become popular and are almost used in implementation of various analog systems, analog to digital converter circuits, digital to analog converter circuits, analog instrumentation design, analog computation and performing the tasks such as higher order active filtering of signals, amplification of signal voltages, signal transduction and ultra high speed conversion of signals. General purpose op-amp circuits are used to realize circuits such as differentiators, high speed comparator circuits, clippers, clampers, antilog and log amplifier circuits, integrators, various waveform generation, addition of analog input signals, buffering of signals, sample and hold circuits, negative impedance converters, differential amplifiers, inverting and non-inverting amplifiers regulated power supplies and many other applications.
@@ -55,5 +55,32 @@ We also test run a CMOS Inverter for our design. It yeilded out some standard re
 <br><br>
 ![image](/images/InverterTran.PNG)
 <br><br>
-![image](/image/Inverterdcsim.PNG)
+![image](/images/Inverterdcsim.PNG)
 <br><br>
+
+
+### Main Design
+Now finally it's time to start with our main design, this would include two crucial components:
+- Voltage Refernce Circuit
+- Operational Amplifier(2-Stage)
+
+Both of these are designed and analysed in the Synposys tools. 
+
+#### Voltage Refernce Circuit
+Voltage Reference Circuit is used to produce stable voltage that would allow a constant current through our transistors and Bias them to a region and would not change it with changes in supply voltage. The circuit used is given below,
+<br>![image](/images/BMCR.PNG)
+<br><br>Following were the results obtained from it<br>
+![images](/images/BMCR_Waveform.PNG)
+<br><br>this was further used to produce a couple more voltages. Whose circuit is given below<br><br>
+![asdf](/images/Vref.PNG)
+
+THis block would be used in the next stage where we designed an Opamp. 
+
+#### 2 Stage OpAMP
+Below is the circuit diagram of a standard two stage Operational Amplifier with a compensation capacitor<br><br>
+![image](/images/opamp.PNG)
+
+This wass simulated with a 1mV ac input at one input end, which corresponds to -60dB on a 20dB logarithmic scale. The below result is what we obtained
+<br>![images](/images/opamp_result.PNG)
+
+### Conclusions
