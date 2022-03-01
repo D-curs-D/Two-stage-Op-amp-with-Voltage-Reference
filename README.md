@@ -80,7 +80,23 @@ THis block would be used in the next stage where we designed an Opamp.
 Below is the circuit diagram of a standard two stage Operational Amplifier with a compensation capacitor<br><br>
 ![image](/images/opamp.PNG)
 
-This wass simulated with a 1mV ac input at one input end, which corresponds to -60dB on a 20dB logarithmic scale. The below result is what we obtained
+This wass simulated with a 1V ac input at one input end, which corresponds to 0dB on a 20dB logarithmic scale. The below result is what we obtained
 <br>![images](/images/opamp_result.PNG)
 
 ### Conclusions
+As you can see, the design was not able to achieve a large gain, even though the design was done considering a 60dB gain. The reasons being:
+- Mismatch of component sizes
+- Improper calculation, since an actual parameter was difficult to obtain. 
+- Design consideration, even though it was done for a small channel process.
+
+But what is amazing is being able to calculate and also display results for a device. The opportunity to use synopsys tools and also experiment with them was a beautiful opportunity. I am grateful for the whole team that gave me this chance to experiment and showcase my design at this platform. 
+
+Special thanks to IIT Hyderabad, Synopsys India and VSD. 
+
+### References
+The main reference were books like CMOS Analog Circuit Design by Allen & Holdberg and also by Razavi. Then there were also a couple papers involved whose links I would be attaching below:
+- [An improved 2 stage opamp with rail-to-rai! gain-boosted folded cascode input stage](https://ieeexplore.ieee.org/document/8292126)
+- [Design of low noise low power two stage CMOS operational amplifier](https://ieeexplore.ieee.org/abstract/document/6963068)
+- [Design and implementation of operational amplifiers with programmable characteristics in a 90nm CMOS process](https://ieeexplore.ieee.org/document/5274950)
+
+___Thank you___
