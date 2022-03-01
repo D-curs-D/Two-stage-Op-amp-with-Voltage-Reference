@@ -1,6 +1,6 @@
 # Two stage Operational Amplifier with Voltage Reference Circuit
 _The project is focused on the creation of an Operational Amplifier with it's own Voltage reference circuit to bias it. The design is based on the 28nm iPDK from SYNOPSYS and hence, is done on it's custom design suite._<br>
-![main-image]()
+![main-image](/images/Cover.PNG)
 
 ### Table of Contents
 - [Introduction and  Abstract](#Introduction)
