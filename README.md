@@ -30,3 +30,13 @@ For starters, we take a length and we stick to it for the rest of our estimation
 ![nmos ids vs vgs](/images/nmos_idsvsvgs.PNG)<br>
 
 Using this curve we can assume the __Vth__ to be closer to __0.5 Volts__. This would be a lot useful when we scale up, that is move to actual calculations.<br><br> Next we find the Vds vs Ids, this would help us determine the current to move forward with.
+![image](/images/nmos_idsvsvds.PNG)
+<br>Above results gives us conclusive values of currents that can be chosen for __NMOS__
+
+
+#### PMOS
+Similarly, we did the same experiments for __P-Channel Metal Oxide-Semiconductor Field Effect Transistor__ or __PMOS__ for short. The results we obtained and the tests are presented below.
+<br>
+![image](/images/pmos_isdvsvsg.PNG)
+<br>
+![image](/images/pmos_isdvsvsd.PNG)
