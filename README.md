@@ -8,7 +8,11 @@ _The project is focused on the creation of an Operational Amplifier with it's ow
   - [NMOS](#NMOS)
   - [PMOS](#PMOS)
   - [Determining Sizes](#Conclusion-and-Sizing)
-  - [Inverter Design](#Inverter) 
+  - [Inverter Design](#Inverter)
+- [Main Design]
+  - [Voltage Refernce Circuit](#Voltage-Reference-Circuit)
+  - [2 Stage OpAMP](#2-Stage-OpAMP)
+  - [Final Say](#Results-and-Conclusion)
 
 ### Introduction
 __Operational amplifier (Op-Amp)__ circuits are _the most important and essential building blocks in the design of different high precision analog and mixed signal blocks_, where the performance is directly dependent to how good your op-amp is. These op-amp circuits have substituted the conventional solid state analog control systems used in industrial applications. With the advent of newer and shrinking device technologies these circuits have become popular and are almost used in implementation of various analog systems, analog to digital converter circuits, digital to analog converter circuits, analog instrumentation design, analog computation and performing the tasks such as higher order active filtering of signals, amplification of signal voltages, signal transduction and ultra high speed conversion of signals. General purpose op-amp circuits are used to realize circuits such as differentiators, high speed comparator circuits, clippers, clampers, antilog and log amplifier circuits, integrators, various waveform generation, addition of analog input signals, buffering of signals, sample and hold circuits, negative impedance converters, differential amplifiers, inverting and non-inverting amplifiers regulated power supplies and many other applications.
@@ -40,3 +44,16 @@ Similarly, we did the same experiments for __P-Channel Metal Oxide-Semiconductor
 ![image](/images/pmos_isdvsvsg.PNG)
 <br>
 ![image](/images/pmos_isdvsvsd.PNG)
+
+
+#### Conclusion and Sizing
+After the above tests, we decided to take the length as __2 * Lmin__ (~60nm) and width as __ 50 * Wmin __ for NMOS and For PMOS the length was the same but we got the width to be double of that.
+
+#### Inverter
+We also test run a CMOS Inverter for our design. It yeilded out some standard results that we expect off an inverter, this was done to ensure that our device works as expected and also to add nother test design to our suite.<br>
+![image](/images/Inverterdc.PNG)
+<br><br>
+![image](/images/InverterTran.PNG)
+<br><br>
+![image](/image/Inverterdcsim.PNG)
+<br><br>
